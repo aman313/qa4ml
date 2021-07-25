@@ -1,0 +1,10 @@
+Demo v1
+
+1. Create dataset from existing source
+2. Create input scenarios
+3. Create identifiers for input scenarios
+4. Create performance criterion for input scenarios
+5. Create model prediction endpoint
+6. Register hooks for model training and batch inference events
+7. Register model endpoint for monitoring
+8. Start training and inference simulators
