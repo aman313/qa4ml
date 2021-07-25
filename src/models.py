@@ -24,6 +24,22 @@ class Dataset(db.Model,Model):
     dataset_io_class_name = db.Column(db.String(max_name_len))
 
 
+class ModelTrainingEvent(db.Model,Model):
+    pass
+
+
+class ModelBatchInferenceEvent(db,Model,Model):
+    pass
+
+
+class DatasetReport(db.Model,Model):
+    pass
+
+
+class PerformanceReport(db.Model,Model):
+    pass
+
+
 class MLProblem(db.Model,Model):
     id = db.Column(db.Integer,primary_key=True)
     name = db.Column(db.String(max_name_len), nullable=False)
@@ -48,6 +64,7 @@ class ProblemCase(db.Model,Model):
     ml_problem = db.relationship('MLProblem',back_populates='problem_cases')
 
 
+
 class PerformanceCriterion(db.Model,Model):
     id = db.Column(db.Integer, primary_key=True)
     name = db.Column(db.String(db.String(max_name_len)),nullable=False)
@@ -59,6 +76,3 @@ class CaseDetectionCriterion(db.Model,Model):
     problem_case_id = db.Column(db.Integer,db.ForeignKey('problem_case.id'))
     problem_case = db.relationship('ProblemCase',back_populates='detection_criterion')
     function_name = db.Column(db.String(max_name_len))
-
-
-
