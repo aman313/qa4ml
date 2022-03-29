@@ -2,3 +2,4 @@ sandman2
 sqlalchemy==1.3.3
 pymysql
 dependency_injector
+requests

@@ -1,0 +1,6 @@
+{
+  "prompt_type": 0,
+  "problem_type": 0,
+  "prompt_text": "This is a factual tweet classifier\\n\\n\\nTweet: \\\"#Breaking #News - Call for Tasmania's emergency services to be trained in horse ... - http://t.co/urJwsVr311 http://t.co/7JfrETeIi4\\\"\\nClass: Yes\\n###\\nTweet: \\\"Fire crews evacuate passengers from a Gold Coast tram trapped when powerlines fell across a carriage. #TenNews 5pm http://t.co/hFyrloQY8q\\\"\\nClass: Yes\\n###\\nTweet: \\\"A person who blows himself up to kill others has no life in heaven because his ethereal body gets destroyed by doing it.\\\"\\nClass: No\\n###\\nTweet: \\\"There's a #fly loose in my workspace with two #bored #cats. I forsee terrible things.  #destruction #badkitty #thisiswhywecanthavenicethings\\\"\\nClass: No\\n###\\nTweet: \\\"",
+  "aug_suffix": "\\\"\\nClass:"
+}

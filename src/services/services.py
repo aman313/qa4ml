@@ -1,8 +1,23 @@
-class ModelMonitoringRegistrationService():
+class BaseService():
+    pass
+
+class ModelMonitoringRegistrationService(BaseService):
+    pass
+
+class FeatureReportService(BaseService):
+
+    def __init__(self,report_location):
+        self.report_location = report_location
+
+    def create_report(self, dataset_id):
+        pass
+
+
+class ModelPerformanceReportService(BaseService):
     pass
 
 
-class ModelMonitoringService():
+class ModelMonitoringService(BaseService):
 
 
     def model_training_event_handler(self):
@@ -22,11 +37,11 @@ class ModelMonitoringService():
         '''
         pass
 
-class DatasetCreationService():
+class DatasetCreationService(BaseService):
     pass
 
-class ResampledDatasetCreationService():
+class ResampledDatasetCreationService(BaseService):
     pass
 
-class AugmentedDatasetCreationService():
+class AugmentedDatasetCreationService(BaseService):
     pass
